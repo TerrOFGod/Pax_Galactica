@@ -5,6 +5,8 @@ using UnityEngine;
 public class DrawSelectUnits
 {
     [SerializeField]
+    private float basePointSize;
+    [SerializeField]
     private RectTransform squareTexture;
 
     private Vector2 startPositionMouse;
@@ -57,7 +59,7 @@ public class DrawSelectUnits
         }
 
         var centerPosition = rect / 2 + startPosition;
-        return new Rect(centerPosition, rect);
+        return new Rect(centerPosition, rect.magnitude != 0f ? rect : new Vector2(basePointSize, basePointSize));
     }
 
     private void EndDraw()
