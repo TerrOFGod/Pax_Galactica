@@ -6493,7 +6493,7 @@ MonoBehaviour:
   MovementForwardAxis: Vertical
   MovementSidewaysAxis: Horizontal
   FastSpeedKey: 304
-  AllowMouseDragging: 1
+  AllowMouseDragging: 0
   DraggingMouseButton: 1
   InvertDragging: 0
   MovementSpeed: 5
@@ -6506,7 +6506,7 @@ MonoBehaviour:
   InvertZooming: 0
   ZoomSensitivity: 1
   ZoomInterpolationSpeed: 1
-  MinZoomDistance: 0
+  MinZoomDistance: -5
   MaxZoomDistance: 4
   PreventClipping: 0
   ClippingDistance: 0
