@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: DepStation
   Icon: {fileID: 21300000, guid: 34c3bc1bab3e9cf42b88cf21db266179, type: 3}
   Price: 50
+  Building: {fileID: 987626501620220410, guid: f324cbace6d441f49b3b5679c974edaa, type: 3}

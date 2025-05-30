@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 
 public class PlaceLogick : MonoBehaviour
 {
+    [SerializeField]
+    private LayerMask layerPlane;
     public static PlaceLogick Instance { get; private set; }
     private PlacedEntity _currentPlaced;
 
@@ -16,21 +18,29 @@ public class PlaceLogick : MonoBehaviour
 
         GameObject ghost = Instantiate(building.BuildingView);
         _currentPlaced = new PlacedEntity(ghost.GetComponent<BuildingView>(),
-            ghost.GetComponent<CollisionTriger>());
+            ghost.GetComponent<CollisionTriger>(), building.Building);
     }
     public void Update()
     {
-        var inputModulr = (CustomStendModule)EventSystem.current.currentInputModule;
+       // var inputModulr = (CustomStendModule)EventSystem.current.currentInputModule;
         if (_currentPlaced != null)
         {
             if (Input.GetMouseButtonDown(0) && _currentPlaced.TryPlace())
             {
+                Instantiate(_currentPlaced.Building, _currentPlaced.View.transform.position, _currentPlaced.View.transform.rotation);
+                Destroy(_currentPlaced.View.gameObject);
                 _currentPlaced = null;
+                Debug.Log(111);
             }
             else
             {
-                _currentPlaced.MovieView(inputModulr.GetMousePositionOnGameObject());
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity, layerPlane))
+                {
+                    _currentPlaced.MovieView(hit.point);
+                }
+                
             }
+
         }
     }
 
@@ -46,13 +56,19 @@ public class PlaceLogick : MonoBehaviour
     public class PlacedEntity
     {
         private BuildingView _view;
+        private GameObject _building;
         private CollisionTriger _triger;
         private bool _isPlaced = false;
-        public PlacedEntity (BuildingView view, CollisionTriger triger)
+        public PlacedEntity (BuildingView view, CollisionTriger triger, GameObject building)
         {
+            _building = building;
             _view = view;
             _triger = triger;
         }
+
+        public GameObject Building => _building;
+
+        public BuildingView View => _view;
 
         public void MovieView(Vector3 pos)
         {

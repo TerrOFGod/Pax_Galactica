@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: Kazarma
   Icon: {fileID: 21300000, guid: 0f456febb51f3f6449fb5f49d4c6a822, type: 3}
   Price: 150
+  Building: {fileID: 987626501620220410, guid: f324cbace6d441f49b3b5679c974edaa, type: 3}

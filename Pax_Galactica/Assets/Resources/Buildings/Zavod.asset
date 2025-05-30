@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: Zavod
   Icon: {fileID: 21300000, guid: b2d32301175cead469eccae8ebd387a7, type: 3}
   Price: 500
+  Building: {fileID: 987626501620220410, guid: f324cbace6d441f49b3b5679c974edaa, type: 3}

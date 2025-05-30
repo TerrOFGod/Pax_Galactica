@@ -9,4 +9,5 @@ public class BuildingProfile : ScriptableObject //для создания листа зданий
     public string Name;
     public Sprite Icon;
     public float Price;
+    public GameObject Building;
 }

@@ -20,7 +20,7 @@ public class CollisionTriger : MonoBehaviour
         }
 
     }
-
+    
     public void OnCollisionStay(Collision collision)
     {
         if (!_isCollised)
