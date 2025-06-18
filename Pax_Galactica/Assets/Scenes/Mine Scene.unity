@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 215416911}
   - component: {fileID: 215416910}
   - component: {fileID: 215416915}
-  m_Layer: 8
+  m_Layer: 19
   m_Name: Mining Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,6 +653,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a6835919d800d41834c65d8bba6717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  health: {fileID: 0}
   point: {fileID: 1219827253}
   colorGizmos: {r: 0.01935637, g: 1, b: 0, a: 1}
   sphereSize: 0.75
@@ -4053,9 +4057,9 @@ MonoBehaviour:
   layerPlane:
     serializedVersion: 2
     m_Bits: 64
-  layerBuilding:
+  layerInteraction:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 524288
   moveMethod: {fileID: 942491732}
   interactionMethod: {fileID: 942491737}
 --- !u!114 &942491734
@@ -9137,6 +9141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42529bd0c0517304fb80643765be0078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  health: {fileID: 0}
   animator: {fileID: 1895538891}
   IdleState: Idle
   moveState: Move

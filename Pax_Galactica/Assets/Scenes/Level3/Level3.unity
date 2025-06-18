@@ -4238,7 +4238,7 @@ MonoBehaviour:
   layerPlane:
     serializedVersion: 2
     m_Bits: 64
-  layerBuilding:
+  layerInteraction:
     serializedVersion: 2
     m_Bits: 0
   moveMethod: {fileID: 894317538}
@@ -8010,7 +8010,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

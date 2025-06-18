@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4398442590495693990}
   - component: {fileID: 4639079598941061873}
   - component: {fileID: 1513532795378490596}
+  - component: {fileID: 5712272155870432300}
   m_Layer: 0
   m_Name: Observatory
   m_TagString: Untagged
@@ -87,3 +88,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &5712272155870432300
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520711572447866587}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 16.285, y: 11.43, z: 16.775002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.009000001, y: 9.854, z: 3.2010002}
+  m_TimeToStationary: 0.5
