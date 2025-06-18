@@ -1989,7 +1989,11 @@ MonoBehaviour:
   layerPlane:
     serializedVersion: 2
     m_Bits: 64
+  layerBuilding:
+    serializedVersion: 2
+    m_Bits: 0
   moveMethod: {fileID: 1658426598}
+  interactionMethod: {fileID: 0}
 --- !u!114 &1658426598
 MonoBehaviour:
   m_ObjectHideFlags: 0

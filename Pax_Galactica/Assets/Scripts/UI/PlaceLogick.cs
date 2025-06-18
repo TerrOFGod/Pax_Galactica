@@ -16,9 +16,8 @@ public class PlaceLogick : MonoBehaviour
     {
         if (_currentPlaced != null) return;
 
-        GameObject ghost = Instantiate(building.BuildingView);
-        _currentPlaced = new PlacedEntity(ghost.GetComponent<BuildingView>(),
-            ghost.GetComponent<CollisionTriger>(), building.Building);
+        GameObject ghost = Instantiate(building.BuildingView.gameObject);
+        _currentPlaced = new PlacedEntity(ghost.GetComponent<BuildingView>(), ghost.GetComponent<CollisionTriger>(), building.Building);
     }
     public void Update()
     {

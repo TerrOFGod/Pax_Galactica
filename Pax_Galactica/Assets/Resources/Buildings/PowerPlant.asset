@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a1e7628e1c4fe4b9dca691ee1aba02, type: 3}
   m_Name: PowerPlant
   m_EditorClassIdentifier: 
-  BuildingView: {fileID: 919132149155446097, guid: 80941f22342ffdf4d8892e8159d5a14d, type: 3}
+  BuildingView: {fileID: 5892146020680839479, guid: e0de5dada26c74c4eb8c2cd2c5beb1ee, type: 3}
   Name: PowerPlant
   Icon: {fileID: 21300000, guid: 40a57d8b07f831249b44da05f96ef554, type: 3}
   Price: 200
-  Building: {fileID: 919132149155446097, guid: 80941f22342ffdf4d8892e8159d5a14d, type: 3}
+  Building: {fileID: 8866151869629534943, guid: bbeea2c8b382d46408afc2f282f52695, type: 3}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a1e7628e1c4fe4b9dca691ee1aba02, type: 3}
   m_Name: Mine
   m_EditorClassIdentifier: 
-  BuildingView: {fileID: 919132149155446097, guid: bcf8fdb50fc4b0747acc9e6eaaf66ef7, type: 3}
+  BuildingView: {fileID: 755807225342996811, guid: e9955a3094ac26c48840499d66a4e0c9, type: 3}
   Name: Mine
   Icon: {fileID: 21300000, guid: ce1fc50f36907594f87ab97f7a9c6eb5, type: 3}
   Price: 300
-  Building: {fileID: 919132149155446097, guid: bcf8fdb50fc4b0747acc9e6eaaf66ef7, type: 3}
+  Building: {fileID: 6412111374554263430, guid: 0b54f01414274be489b3b98e5c793323, type: 3}

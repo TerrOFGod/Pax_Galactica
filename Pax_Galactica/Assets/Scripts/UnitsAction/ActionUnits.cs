@@ -6,7 +6,7 @@ public class ActionUnits : MonoBehaviour
     [SerializeField]
     private LayerMask layerPlane;
     [SerializeField]
-    private LayerMask layerBuilding;
+    private LayerMask layerInteraction;
     [SerializeField]
     private BaseMoveUnits moveMethod;
     [SerializeField]
@@ -21,9 +21,8 @@ public class ActionUnits : MonoBehaviour
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, maxDistanceRay, layerBuilding))
+            if (Physics.Raycast(ray, out hit, maxDistanceRay, layerInteraction))
             {
-                Debug.Log("Interaction");
                 interactionMethod.Interact(hit.transform.GetComponent<BaseObject>());
             }
             else if(Physics.Raycast(ray, out hit, maxDistanceRay, layerPlane))

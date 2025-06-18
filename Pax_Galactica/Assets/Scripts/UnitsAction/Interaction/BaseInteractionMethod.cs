@@ -14,13 +14,18 @@ public class BaseInteractionMethod : MonoBehaviour
         {
             case MiningBuilding:
             {
-                Mining(baseObject);
+                Interaction(baseObject);
+                break;
+            }
+            default:
+            {
+                Interaction(baseObject);
                 break;
             }
         }
     }
 
-    private void Mining(BaseObject baseObject)
+    private void Interaction(BaseObject baseObject)
     {
         var units = Units.Instance.SelectedUnits;
 

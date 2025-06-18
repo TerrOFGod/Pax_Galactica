@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a1e7628e1c4fe4b9dca691ee1aba02, type: 3}
   m_Name: Observatory
   m_EditorClassIdentifier: 
-  BuildingView: {fileID: 919132149155446097, guid: cdc3a6998c9bff04f86c1012abe9df72, type: 3}
+  BuildingView: {fileID: 6291876967721287752, guid: c749c90ce3cc0f34f9130c068595bad3, type: 3}
   Name: Observatory
   Icon: {fileID: 21300000, guid: 4687e71afeb9ceb468b976cd63fb8e62, type: 3}
   Price: 400
-  Building: {fileID: 919132149155446097, guid: cdc3a6998c9bff04f86c1012abe9df72, type: 3}
+  Building: {fileID: 6520711572447866587, guid: a9efa785691510f41bc00a68e5ebf4d6, type: 3}

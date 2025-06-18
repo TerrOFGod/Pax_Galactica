@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Unit : BaseObject
 {
     [SerializeField]
-    private Animator animator;
+    protected Animator animator;
     [SerializeField]
     private string IdleState;
     [SerializeField]
@@ -40,7 +40,7 @@ public class Unit : BaseObject
         UpdateAnimation();
     }
 
-    public void UpdateAnimation()
+    public virtual void UpdateAnimation()
     {
         PathIsEnd = agent.remainingDistance <= agent.stoppingDistance;
         animator.SetBool(IdleState, PathIsEnd);
@@ -52,8 +52,9 @@ public class Unit : BaseObject
         agent.SetDestination(point);
     }
 
-    public virtual void Interaction(Component objectComponent)
+    public virtual void Interaction(BaseObject objectComponent)
     {
+        Debug.Log("Interaction");
         //Интерактирование с предметом (к примеру со зданием (починка) или с врагами (атакующее состояние))
     }
 

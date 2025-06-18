@@ -26,7 +26,7 @@ public class UnitMine : Unit
         base.Move(point);
     }
 
-    public override void Interaction(Component objectComponent)
+    public override void Interaction(BaseObject objectComponent)
     {
         var mineBuilding = objectComponent as MiningBuilding;
 
