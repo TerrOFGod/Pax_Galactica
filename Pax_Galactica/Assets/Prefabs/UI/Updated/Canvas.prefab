@@ -2095,6 +2095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929222389d6b98b458b23c4f2cf4525b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pathProfiles: Buildings/Offense
   BuildingButtonTemplate: {fileID: 8302940878318481872, guid: d138405ef5952fa44b9d99776e57f632, type: 3}
   _buttonParent: {fileID: 8533831842459654195}
 --- !u!1 &4462283362836224725
@@ -3475,6 +3476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929222389d6b98b458b23c4f2cf4525b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pathProfiles: Buildings/Resource
   BuildingButtonTemplate: {fileID: 8302940878318481872, guid: d138405ef5952fa44b9d99776e57f632, type: 3}
   _buttonParent: {fileID: 9172534532960415672}
 --- !u!1 &6562883406860266363
@@ -5126,5 +5128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929222389d6b98b458b23c4f2cf4525b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pathProfiles: Buildings/Defense
   BuildingButtonTemplate: {fileID: 8302940878318481872, guid: d138405ef5952fa44b9d99776e57f632, type: 3}
   _buttonParent: {fileID: 7962033437427543441}
